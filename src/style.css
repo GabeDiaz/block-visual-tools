@@ -1,0 +1,20 @@
+/* Hidden block styles */
+.wp-block[style*="display: none"]:hover {
+    display: block !important;
+    opacity: 0.5;
+    outline: 2px dashed #dc3545;
+    position: relative;
+}
+
+.wp-block[style*="display: none"]:hover::before {
+    content: "Hidden Block";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background: #dc3545;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+    z-index: 999;
+} 
